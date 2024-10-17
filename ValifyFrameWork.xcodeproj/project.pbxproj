@@ -8,11 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		218A14B22CC0AA8A00E98FB1 /* ValifyFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 218A14B12CC0AA8A00E98FB1 /* ValifyFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		218A14BB2CC0AAC800E98FB1 /* TakeSelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218A14B92CC0AAC800E98FB1 /* TakeSelfieViewController.swift */; };
+		218A14BC2CC0AAC800E98FB1 /* TakeSelfieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218A14BA2CC0AAC800E98FB1 /* TakeSelfieViewController.xib */; };
+		218A14C02CC0AC6C00E98FB1 /* PresentSelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218A14BE2CC0AC6C00E98FB1 /* PresentSelfieViewController.swift */; };
+		218A14C12CC0AC6C00E98FB1 /* PresentSelfieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218A14BF2CC0AC6C00E98FB1 /* PresentSelfieViewController.xib */; };
+		218A14C42CC0B0D900E98FB1 /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218A14C32CC0B0D900E98FB1 /* NavigationProtocol.swift */; };
+		218A14C62CC0B12400E98FB1 /* ApprovableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218A14C52CC0B12400E98FB1 /* ApprovableProtocol.swift */; };
+		218A14C82CC0B36300E98FB1 /* Controller+NavigateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218A14C72CC0B36300E98FB1 /* Controller+NavigateExtension.swift */; };
+		218A14CB2CC0B4FB00E98FB1 /* ValifyFrameworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218A14CA2CC0B4FB00E98FB1 /* ValifyFrameworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		218A14AE2CC0AA8A00E98FB1 /* ValifyFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValifyFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		218A14B12CC0AA8A00E98FB1 /* ValifyFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValifyFrameWork.h; sourceTree = "<group>"; };
+		218A14B92CC0AAC800E98FB1 /* TakeSelfieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeSelfieViewController.swift; sourceTree = "<group>"; };
+		218A14BA2CC0AAC800E98FB1 /* TakeSelfieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakeSelfieViewController.xib; sourceTree = "<group>"; };
+		218A14BE2CC0AC6C00E98FB1 /* PresentSelfieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSelfieViewController.swift; sourceTree = "<group>"; };
+		218A14BF2CC0AC6C00E98FB1 /* PresentSelfieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentSelfieViewController.xib; sourceTree = "<group>"; };
+		218A14C32CC0B0D900E98FB1 /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
+		218A14C52CC0B12400E98FB1 /* ApprovableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovableProtocol.swift; sourceTree = "<group>"; };
+		218A14C72CC0B36300E98FB1 /* Controller+NavigateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Controller+NavigateExtension.swift"; sourceTree = "<group>"; };
+		218A14CA2CC0B4FB00E98FB1 /* ValifyFrameworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValifyFrameworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,10 @@
 		218A14A42CC0AA8A00E98FB1 = {
 			isa = PBXGroup;
 			children = (
+				218A14C92CC0B4D300E98FB1 /* FrameworkManager */,
+				218A14C22CC0B0AF00E98FB1 /* Protocols */,
+				218A14BD2CC0AC3C00E98FB1 /* PresentSelfie */,
+				218A14B82CC0AA9800E98FB1 /* TakeSelfie */,
 				218A14B02CC0AA8A00E98FB1 /* ValifyFrameWork */,
 				218A14AF2CC0AA8A00E98FB1 /* Products */,
 			);
@@ -48,6 +68,42 @@
 				218A14B12CC0AA8A00E98FB1 /* ValifyFrameWork.h */,
 			);
 			path = ValifyFrameWork;
+			sourceTree = "<group>";
+		};
+		218A14B82CC0AA9800E98FB1 /* TakeSelfie */ = {
+			isa = PBXGroup;
+			children = (
+				218A14B92CC0AAC800E98FB1 /* TakeSelfieViewController.swift */,
+				218A14BA2CC0AAC800E98FB1 /* TakeSelfieViewController.xib */,
+				218A14C72CC0B36300E98FB1 /* Controller+NavigateExtension.swift */,
+			);
+			path = TakeSelfie;
+			sourceTree = "<group>";
+		};
+		218A14BD2CC0AC3C00E98FB1 /* PresentSelfie */ = {
+			isa = PBXGroup;
+			children = (
+				218A14BE2CC0AC6C00E98FB1 /* PresentSelfieViewController.swift */,
+				218A14BF2CC0AC6C00E98FB1 /* PresentSelfieViewController.xib */,
+			);
+			path = PresentSelfie;
+			sourceTree = "<group>";
+		};
+		218A14C22CC0B0AF00E98FB1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				218A14C32CC0B0D900E98FB1 /* NavigationProtocol.swift */,
+				218A14C52CC0B12400E98FB1 /* ApprovableProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		218A14C92CC0B4D300E98FB1 /* FrameworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				218A14CA2CC0B4FB00E98FB1 /* ValifyFrameworkManager.swift */,
+			);
+			path = FrameworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +149,7 @@
 				TargetAttributes = {
 					218A14AD2CC0AA8A00E98FB1 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -119,6 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218A14C12CC0AC6C00E98FB1 /* PresentSelfieViewController.xib in Resources */,
+				218A14BC2CC0AAC800E98FB1 /* TakeSelfieViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218A14C02CC0AC6C00E98FB1 /* PresentSelfieViewController.swift in Sources */,
+				218A14C62CC0B12400E98FB1 /* ApprovableProtocol.swift in Sources */,
+				218A14C42CC0B0D900E98FB1 /* NavigationProtocol.swift in Sources */,
+				218A14CB2CC0B4FB00E98FB1 /* ValifyFrameworkManager.swift in Sources */,
+				218A14BB2CC0AAC800E98FB1 /* TakeSelfieViewController.swift in Sources */,
+				218A14C82CC0B36300E98FB1 /* Controller+NavigateExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +328,7 @@
 		218A14B62CC0AA8A00E98FB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -274,6 +340,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,6 +353,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -294,6 +362,7 @@
 		218A14B72CC0AA8A00E98FB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -305,6 +374,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
